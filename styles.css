@@ -1,0 +1,130 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+#title, #description{
+  text-align:center;
+}
+
+#title{
+  font-weight:400;
+  margin: 0 1rem;
+}
+
+#description{
+  font-style:italic;
+  font-weight:200;
+  margin: .5rem 1rem 1rem;
+}
+
+html,body{
+  height:100%;
+}
+
+body{
+  color: #f3f3f3;
+  font-family: 'Poppins', sans-serif;
+  font-size:1.3rem;
+  background-image:linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size:cover;
+}
+
+.container{
+  margin-top:40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.presentation{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.form-container{
+  background-color:rgba(27, 27, 50, 0.8);
+  border-radius:5px;
+  padding:40px;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+form input, form textarea, form select{
+  font-size:1rem;
+}
+
+form input, form select{
+  padding:.6rem;
+  border-radius: 5px;
+  border:none;
+  color:#495057;
+}
+
+form input:focus , form select:focus{
+  outline: 1px blue solid;
+  color:#495057;
+}
+
+#submit{
+  background-color:#37af65;
+  padding: .6rem 0;
+  font-size: 1.1rem;
+  color: white;
+  border-radius: 2px;
+  border:none;
+  margin-top:1.4rem;
+  cursor:pointer;
+}
+
+form > label{
+  padding-top:1.6rem;
+  padding-bottom: .5rem;
+}
+
+.choice-container p{
+  margin-top:1.6rem;
+  margin-bottom:.5rem;
+}
+
+.choice-container input{
+  margin:.6rem 0;
+}
+
+form textarea{  
+  resize: vertical;
+  height:125px;
+  padding: .5rem;
+}
+
+.form-container{
+  max-width:750px;
+  width:100%;
+}
+
+#name-label{
+  padding-top:0;
+}
+
+#attribution{
+  margin: 2rem 1rem 1.5rem;
+  text-align: center;
+}
